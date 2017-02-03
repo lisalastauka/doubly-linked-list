@@ -108,12 +108,12 @@ class LinkedList {
     }
 
     indexOf(data) {
-        let tempNode = this._head, tempIndex = 0;
-        while (tempNode) {
-            if (tempNode.data === data) {
-                return tempIndex;}
-            tempNode = tempNode.next;
-            tempIndex++;
+        let node = this._head, i = 0;
+        while (node) {
+            if (node.data === data) {
+                return i;}
+            node = node.next;
+            i++;
         }
         return -1;
     }
